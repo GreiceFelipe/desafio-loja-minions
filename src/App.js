@@ -10,7 +10,7 @@ const Sobre = () => {
 
 const Reservar = ({match}) => {
   return(
-      <div className="media pt-3">
+      <div className="media pt-3 div-form">
         <img src={"https://s3.us-east-2.amazonaws.com/minios-imagens/minio-"+match.params.id+".png"} alt="" className="mr-3 img-pag-pricipal"/>
         <div className="media-body">
           <h5 className="mt-0 mb-1">Boneco Minios {match.params.minion}</h5>
@@ -22,6 +22,7 @@ const Reservar = ({match}) => {
               <label for="email">Email</label>
               <input type="email" className="form-control col-md-6 col-sm-10" id="email" placeholder="nome@exemplo.com" />
             </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
@@ -58,7 +59,7 @@ class App extends Component {
           <Route path="/" exact strict render={
             () => {
               return(
-                <div className="container p-3">
+                <div className="container p-3 mb-3">
                   <ul className="list-unstyled">
                     <li className="media pt-3">
                       <img src="https://s3.us-east-2.amazonaws.com/minios-imagens/minio-1.png" alt="" className="mr-3 img-pag-pricipal"/>
