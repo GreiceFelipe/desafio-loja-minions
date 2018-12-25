@@ -9,6 +9,7 @@ const Sobre = () => {
     <div className="pt-3 div-form">
       <h1>Sobre nós</h1>
       <p>Sabemos o quanto é difícil encontrar os melhores bonecos de minios por aí por isso temos eles aqui para você reservar e se divertir.</p>
+      <p>Aqui nós temos modelos exclusivos de minions para você colecionar e sempre que possível renovamos os nosso modelos de minions.</p>
     </div>
     )
 }
