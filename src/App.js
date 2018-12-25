@@ -5,7 +5,12 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 const Sobre = () => {
-  return(<h1>Sobre nós</h1>)
+  return(
+    <div className="pt-3 div-form">
+      <h1>Sobre nós</h1>
+      <p>Sabemos o quanto é difícil encontrar os melhores bonecos de minios por aí por isso temos eles aqui para você reservar e se divertir.</p>
+    </div>
+    )
 }
 
 const Reservar = ({match}) => {
@@ -49,7 +54,6 @@ class App extends Component {
               <div className="navbar-nav">
                 <Link  to="/" className="nav-item nav-link">Home</Link>
                 <Link  to="/sobre" className="nav-item nav-link">Sobre nós</Link>
-                <Link  to="/" className="nav-item nav-link">Login</Link>
               </div>
             </div>
             
